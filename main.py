@@ -4,10 +4,11 @@ from discord.ext import commands
 import random
 import asyncio
 import aiohttp
-
+import os
 
 # Configuración
-TOKEN = "MTIzMTM4NzQ3OTYzOTE5NTY2OQ.GK4Vey.IKKMhqQoqO3Ef0yO9eOAjCeimI52VTKUSKs_4c"
+
+TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = 1226791485161082922  # ID de tu servidor
 TARGET_USER_ID = 638180469191475210  # ID del usuario a eliminar mensajes
 
